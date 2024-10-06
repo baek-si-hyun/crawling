@@ -187,7 +187,8 @@ async def crawl_naver_news_details(sem, browser, url):
                     "url": url,
                     "title_en": title_en,
                     "content_en": content_en,
-                    "press_en": press_en  # 번역된 언론사 필드 추가
+                    "press_en": press_en ,
+                    "tags" : []
                 }
                 return article
             else:
