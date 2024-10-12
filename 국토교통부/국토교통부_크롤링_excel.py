@@ -68,7 +68,7 @@ async def main():
             print(f"페이지 {page_num} 크롤링 중: {url}")
             try:
                 await page.goto(url)
-                await page.wait_for_timeout(1000)  # 1초 지연
+                # await page.wait_for_timeout(1000)  # 1초 지연
 
                 # 페이지의 HTML 가져오기
                 content = await page.content()
